@@ -50,9 +50,9 @@ TARGET_SCREEN_DENSITY := 320
 
 # Kernel
 TARGET_KERNEL_CONFIG := water_defconfig # no file, only make build system happy
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)-kernel/kernel # automatically copied
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)-kernel/dtb.img # for mkbootimg only
-BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)-kernel/dtbo.img # automatically copied
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)prebuilts/kernel # automatically copied
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)prebuilts/dtb.img # for mkbootimg only
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)prebuilts/dtbo.img # automatically copied
 TARGET_FORCE_PREBUILT_KERNEL := true # dont really build with our imcomplete "source"
 
 # Partitions
